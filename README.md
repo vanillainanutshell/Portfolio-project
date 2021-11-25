@@ -15,7 +15,7 @@ The first part of the portfolio project
 
 ### Setup
 
-- Clone this repo URL ´https://github.com/vanillainanutshell/hello-world#hello-world´
+- Clone this repo URL "https://github.com/vanillainanutshell/Portfolio-project"
 
 ## Authors
 
