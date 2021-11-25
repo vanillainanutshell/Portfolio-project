@@ -1,0 +1,47 @@
+* {
+    color: white;
+    list-style: none;
+    font-family: "Roboto";
+}
+
+body {
+    width: 100%;
+    background-color: #1C1A19;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: #3c3c33;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    margin-left: 5%;
+    size: 18px;
+}
+
+.burgir {
+    height: 12px;
+    width: 18px;
+    margin-right: 5%;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Crete Round";
+    font-size: 56px;
+    color: #ff6b00;
+}
+
+.descrip {
+    font-family: "Poppins";
+}
