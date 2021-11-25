@@ -98,6 +98,16 @@ h3 {
     align-self: center;
 }
 
-.whitebutton {
+.minibio {
+    font-family: "Inter", sans-serif;
+    color: #091E42;
+    font-weight: normal;
+}
+
+.whitebuttons {
     padding: 10px 12px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
 }
