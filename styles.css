@@ -2,12 +2,17 @@
     color: white;
     list-style: none;
     font-family: "Roboto";
+    font-weight: bold;
 }
 
 body {
     width: 100%;
     background-color: #1C1A19;
     margin: 0;
+    background-image: url("imgs/Group.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 header {
@@ -30,18 +35,34 @@ p {
     margin-right: 5%;
 }
 
+.bio {
+    padding: 10vh 3vh;
+}
+
 .social_media {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    padding: 0;
 }
 
 h1 {
     font-family: "Crete Round";
     font-size: 56px;
     color: #ff6b00;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 .descrip {
     font-family: "Poppins";
+    font-weight: normal;
+    margin-left: 0;
+    font-size: 16px;
 }
