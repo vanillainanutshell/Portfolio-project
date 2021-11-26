@@ -23,7 +23,7 @@ header {
 .grid-container {
     background-color: white;
     display: grid;
-    grid-template-columns: ;
+    justify-content: center;
 }
 
 ul {
@@ -137,6 +137,36 @@ h3 {
     font-weight: bold;
 }
 
+.flatbutton:hover {
+    padding: 12px 15px;
+    color: #ff6b00;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #ff6b00;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.flatbutton:active {
+    padding: 12px 15px;
+    color: #f4f1f0;
+    background-color: #e05304;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.flatbutton:disabled {
+    padding: 12px 15px;
+    color: #5b5957;
+    background-color: #f4f1f0;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .thiccbutton {
     padding: 12px 15px;
     color: white;
@@ -146,6 +176,36 @@ h3 {
     font-size: 17px;
     font-weight: bold;
     width: 100%;
+}
+
+.thiccbutton:hover {
+    padding: 12px 15px;
+    color: #ff6b00;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #ff6b00;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.thiccbutton:active {
+    padding: 12px 15px;
+    color: #f4f1f0;
+    background-color: #e05304;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.thiccbutton:disabled {
+    padding: 12px 15px;
+    color: #5b5957;
+    background-color: #f4f1f0;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .secondcard {
