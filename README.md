@@ -3,7 +3,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio-project
-
+  Second part of the Portfolio project
+![image](https://user-images.githubusercontent.com/88060989/143655339-442e20f6-6c21-4464-98a3-5817ffefa81e.png)
 
 
 
