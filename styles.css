@@ -1,7 +1,6 @@
 * {
     list-style: none;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
 }
 
 body {
@@ -29,6 +28,7 @@ header {
 
 .doe {
     margin-left: 5%;
+    font-weight: bold;
 }
 
 .bio {
@@ -59,6 +59,8 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-family: "Crete Round", sans-serif;
+    font-weight: normal;
 }
 
 .descrip {
@@ -66,10 +68,6 @@ h2 {
     font-weight: normal;
     margin-left: 0;
     font-size: 16px;
-}
-
-.grid-container {
-    display: grid;
 }
 
 .myworks {
@@ -94,8 +92,6 @@ h3 {
 
 .placeholder {
     margin-top: 5vh;
-    display: flex;
-    align-self: center;
 }
 
 .minibio {
@@ -106,8 +102,81 @@ h3 {
 
 .whitebuttons {
     padding: 10px 12px;
-    height: 40px;
-    border-style: solid;
-    border-width: 1px;
     background-color: white;
+    color: #091E42;
+    margin-right: 10px;
+    border: 1px solid #091E42;
+    font-family: "Inter", sans-serif;
+}
+
+.langcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+    opacity: 25%;
+}
+
+.flatbutton {
+    padding: 12px 15px;
+    color: white;
+    background-color: #FF6B00;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.thiccbutton {
+    padding: 12px 15px;
+    color: white;
+    background-color: #FF6B00;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.secondcard {
+    background-image: url("imgs/place.svg");
+}
+
+h4 {
+    padding: 10px;
+    font-size: 32px;
+    font-family: "Crete Round", sans-serif;
+    font-weight: normal;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.opaquebuttons {
+    padding: 10px 12px;
+    background-color: white;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid #091E42;
+    font-family: "Inter", sans-serif;
+}
+
+.secondbio {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: normal;
+    opacity: 75%;
+}
+
+.about {
+    margin: 10vh 3vh;
+    background-image: url("imgs/group2.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    color: white;
+    height: 60vh;
+    border-bottom: 1px white solid;
 }
