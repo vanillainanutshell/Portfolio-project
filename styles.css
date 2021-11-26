@@ -20,6 +20,16 @@ header {
     color: white;
 }
 
+.grid-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: ;
+}
+
+ul {
+    padding: 0%
+}
+
 .burgir {
     height: 12px;
     width: 18px;
@@ -78,6 +88,7 @@ h2 {
     color: black;
     padding: 3vh;
     justify-content: center;
+    border: none;
 }
 
 h3 {
@@ -114,7 +125,6 @@ h3 {
     flex-direction: row;
     justify-content: left;
     padding: 0;
-    opacity: 25%;
 }
 
 .flatbutton {
@@ -154,7 +164,7 @@ h4 {
 
 .opaquebuttons {
     padding: 10px 12px;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.25);
     color: white;
     margin-left: 10px;
     border: 1px solid #091E42;
@@ -179,4 +189,58 @@ h4 {
     color: white;
     height: 60vh;
     border-bottom: 1px white solid;
+}
+
+.toolscontainer {
+    margin: 10vh 3vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 0%;
+}
+
+.diamond {
+    width: 18px;
+    height: 18px;
+    transform: rotate(-45deg);
+    background: #ff6b00;
+}
+
+.toolstitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 0%;
+    justify-content: center;
+}
+
+.toolstitle>h5 {
+    font-family: "Indian", sans-serif;
+    color: white;
+    font-size: 32px;
+    margin: 25px 15px;
+}
+
+.square {
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+}
+
+.sphere {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #ff6b00;
+}
+
+.aboutlist {
+    font-family: "Indian", sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 22px;
+    margin: 25px;
+    text-align: center;
+    padding: 0%;
 }
