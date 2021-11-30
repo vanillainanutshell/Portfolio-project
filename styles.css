@@ -48,6 +48,7 @@ ul {
     background-position-x: right;
     background-position-y: bottom;
     color: white;
+    box-sizing: border-box;
 }
 
 .social_media {
@@ -333,7 +334,7 @@ input {
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 3vh;
+    padding: 0;
     color: rgba(23, 43, 77, 1);
 }
 
@@ -377,7 +378,12 @@ input {
     width: 100%;
 }
 
-.myForm form {
-    padding: 0;
-    width: 100%;
+.myForm p {
+    padding: 3vh;
+}
+
+.myForm .social_media {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 10vh;
+  padding: 3vh 0;
 }
