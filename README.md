@@ -28,6 +28,8 @@ Second part of the Portfolio project
 - GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
 - LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
 
+👤 **Author2**
+
 
 ## 🤝 Contributing
 
