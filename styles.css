@@ -48,6 +48,7 @@ ul {
   background-position-x: right;
   background-position-y: bottom;
   color: white;
+  box-sizing: border-box;
 }
 
 .social_media {
@@ -77,6 +78,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   margin-left: 0;
+  margin-right: 5vh;
   font-size: 16px;
 }
 
@@ -321,4 +323,77 @@ h4 {
   margin: 25px;
   text-align: center;
   padding: 0%;
+}
+
+input {
+  border: none;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgba(23, 43, 77, 1);
+  width: 100%;
+  padding: 0 3vh;
+  box-sizing: border-box;
+}
+
+.myFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgba(23, 43, 77, 1);
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myForm p {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.myForm input,
+.myForm textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.myForm input {
+  padding: 14px;
+  border-bottom: 1px solid rgba(219, 216, 215, 1);
+}
+
+.myForm textarea {
+  padding: 14px;
+  background-color: rgba(251, 248, 247, 1);
+  height: 100px;
+  border: none;
+}
+
+.myForm > * {
+  margin-top: 25px;
+}
+
+.myFooter .social_media {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 10vh;
+  padding-top: 3vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.social_media li {
+  padding-right: 3vh;
 }
