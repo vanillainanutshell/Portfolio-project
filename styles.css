@@ -51,6 +51,11 @@ ul {
     box-sizing: border-box;
 }
 
+.firstcard h2,
+.firstcard p {
+    color: #091E42;
+}
+
 .social_media {
     display: flex;
     flex-direction: row;
@@ -69,7 +74,7 @@ h5 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 40px;
     font-family: "Crete Round", sans-serif;
     font-weight: normal;
 }
@@ -145,6 +150,7 @@ h3 {
     font-size: 17px;
     font-weight: bold;
     width: 50%;
+    transition: all 0, 3s linear;
 }
 
 .flatbutton:hover {
@@ -189,6 +195,7 @@ h3 {
     font-size: 17px;
     font-weight: bold;
     width: 100%;
+    transition: all 0, 3s linear;
 }
 
 .thiccbutton:hover {
