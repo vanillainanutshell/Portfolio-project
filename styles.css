@@ -404,3 +404,54 @@ input {
 .social_media li {
     padding-right: 3vh;
 }
+
+.m-hidden {
+    display: none;
+}
+
+.m-hidden li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vh;
+}
+
+@media screen and (min-width:1000px) {
+    .d-hidden {
+        display: none;
+    }
+    .m-hidden {
+        display: flex;
+        padding: 0 10vw;
+    }
+    .toolbar {
+        display: flex;
+        justify-content: space-around;
+    }
+    .toolbar .doe {
+        margin: 0;
+        padding-right: 25vw;
+    }
+    .toolbar li {
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio {
+        background-image: url(imgs/Illustration-header.svg);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .descrip {
+        width: 40%;
+    }
+    .media .social_media {
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+    }
+}
