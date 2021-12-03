@@ -65,6 +65,15 @@ ul {
     padding: 0;
 }
 
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+}
+
 h5 {
     font-family: "Crete Round", sans-serif;
     font-size: 56px;
@@ -429,7 +438,7 @@ input {
     }
     .toolbar .doe {
         margin: 0;
-        padding-right: 25vw;
+        padding-right: 20vw;
     }
     .toolbar li {
         font-size: 15px;
@@ -443,15 +452,50 @@ input {
         box-sizing: border-box;
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        padding: 20vh 3vh;
     }
     .descrip {
         width: 40%;
+    }
+    .media {
+        width: auto;
+        padding-top: 10%;
     }
     .media .social_media {
         flex-direction: column;
         justify-content: space-between;
         width: auto;
     }
+    .bio section {
+        margin-left: 5vw;
+    }
+    .social_media li {
+        margin-bottom: 20px;
+    }
+    section h5 {
+        font-size: 72px;
+        margin-top: 50px;
+    }
+    section h2 {
+        font-size: 32px;
+    }
+    section .descrip {
+        font-size: 20px;
+    }
+    .myworks {
+        align-items: flex-start;
+        padding: 15vh;
+    }
+    .myworks h3 {
+        border: none;
+    }
+    .myworks hr {
+        border: 1px black;
+        color: black;
+        background-color: black;
+    }
+}
+
+
 }
