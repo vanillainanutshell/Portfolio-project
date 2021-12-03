@@ -20,6 +20,11 @@ header {
   color: white;
 }
 
+input[type="button"],
+button {
+  transition: all 0.3s ease-in;
+}
+
 .grid-container {
   background-color: white;
   display: grid;
