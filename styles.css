@@ -493,11 +493,13 @@ input {
   .bio {
     background-image: url(imgs/Illustration-header.svg);
     box-sizing: border-box;
+    background-size: 40%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     padding: 20vh 3vh;
     height: 100vh;
+    position: relative;
   }
 
   .descrip {
@@ -528,16 +530,17 @@ input {
   }
 
   section h5 {
-    font-size: 72px;
+    font-size: 6vw;
     margin-top: 50px;
   }
 
   section h2 {
-    font-size: 32px;
+    font-size: 2.8vw;
   }
 
   section .descrip {
-    font-size: 20px;
+    font-size: 1.7vw;
+    font-family: "Crete Round", sans-serif;
   }
 
   .myworks {
@@ -560,6 +563,7 @@ input {
     border: none;
     margin-right: 35px;
     color: #091e42;
+    font-size: 3.5vw;
   }
 
   .myworks .line {
@@ -582,13 +586,13 @@ input {
   }
 
   .desktopcard1 h2 {
-    font-size: 40px;
+    font-size: 3vw;
     color: #091e42;
     margin-top: auto;
   }
 
   .desktopcard1 p {
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #091e42;
   }
 
@@ -617,6 +621,7 @@ input {
 
   .opaquebuttons {
     padding: 10px 12px !important;
+    font-size: 1.3vw;
   }
 
   .desktopcard2 {
@@ -644,21 +649,22 @@ input {
   .about {
     background-image: url(imgs/aboutbackground.svg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
+    background-size: 40%;
     border: none;
     margin-bottom: 0;
   }
 
   .about h1 {
-    font-size: 72px;
+    font-size: 6vw;
     color: #f55800;
     font-weight: normal;
     margin-bottom: 0;
   }
 
   .about p {
-    font-size: 20px;
     width: 50%;
+    font-weight: normal;
   }
 
   .about .flatbutton {
@@ -681,7 +687,7 @@ input {
   .myForm {
     display: flex;
     flex-direction: row;
-    padding: 5vh 15vh;
+    justify-content: space-around;
     align-items: baseline;
   }
 
@@ -694,6 +700,11 @@ input {
     margin: 0;
     width: 50%;
     text-align: left;
+    font-size: 3vw;
+  }
+
+  .pad {
+    padding: 5vw;
   }
 
   .myForm .flatbutton {
@@ -727,13 +738,21 @@ input {
   }
 
   .cardinfo h4 {
-    font-size: 32px;
+    font-size: 2.3vw;
     padding: 15px;
     opacity: 80%;
   }
 
+  .toolstitle h5 {
+    font-size: 2.8vw;
+  }
+
+  .aboutlist {
+    font-size: 1.8vw;
+  }
+
   .cardinfo p {
-    font-size: 17px;
+    font-size: 1.3vw;
     color: white;
     padding-left: 15px;
     font-weight: normal;
@@ -752,5 +771,9 @@ input {
   .myForm input:hover,
   textarea:hover {
     transform: translateX(20px);
+  }
+
+  .whitebuttons {
+    font-size: 1.3vw;
   }
 }
