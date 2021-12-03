@@ -19,10 +19,10 @@
         font-size: 18px;
         color: white;
     }
-
+    
     input[type="button"],
     button {
-      transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
     }
     
     .grid-container {
@@ -657,5 +657,16 @@
             padding-left: 15px;
             font-weight: normal;
             opacity: 80%;
+        }
+        .myForm button:hover {
+            width: auto;
+        }
+        .myForm input:hover,
+        textarea:hover {
+            transform: translateX(20px);
+        }
+        .myForm input,
+        textarea {
+            transition: all 0.3s linear;
         }
     }
