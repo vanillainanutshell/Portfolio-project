@@ -55,6 +55,7 @@
         color: white;
         box-sizing: border-box;
         height: 100vh;
+        animation: slide-background 1s ease-out 1;
     }
     
     h2 {
@@ -426,6 +427,30 @@
         display: flex;
         justify-content: space-between;
         padding: 0 3vh;
+    }
+
+    .bio section {
+      animation: slide-right 1s ease-out 1;
+    }
+
+    @keyframes slide-right {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes slide-background {
+      from {
+        background-position-x: 200%;
+      }
+
+      to {
+        background-position-x: right;
+      }
     }
     
     @media screen and (min-width: 1000px) {
