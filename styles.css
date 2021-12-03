@@ -436,6 +436,7 @@
             display: flex;
             justify-content: space-around;
             position: fixed;
+            z-index: 3;
         }
         .toolbar .doe {
             margin: 0;
@@ -544,7 +545,7 @@
             grid-auto-rows: minmax(500px, auto);
             box-sizing: border-box;
             gap: 24px;
-            padding: 0 15vh;
+            padding: 2vh 15vh 10vh 15vh;
         }
         .grido {
             align-self: center;
@@ -556,11 +557,18 @@
         .desktopcard2 {
             display: flex;
             flex-direction: column;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
             justify-content: flex-end;
             align-items: center;
             box-sizing: border-box;
+        }
+        .desktopcard2 img {
+            position: absolute;
+            z-index: 1;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
         .abouty {
             padding: 0 10vh;
@@ -602,7 +610,8 @@
         .myForm {
             display: flex;
             flex-direction: row;
-            padding: 0 15vh;
+            padding: 5vh 15vh;
+            align-items: baseline;
         }
         .deskform {
             display: flex;
@@ -617,8 +626,26 @@
             width: 15%;
         }
         .cardinfo {
-            position: absolute;
-            top: calc(100%-258px);
-            left: 0;
+            z-index: 2;
+            width: 100%;
+        }
+        .thiccbutton {
+            z-index: 2;
+        }
+        .desktopcard1 .flatbutton {
+            padding: 10px 15px;
+            width: auto;
+            box-sizing: border-box;
+        }
+        .cardinfo .thiccbutton {
+            width: 100%;
+        }
+        .buttonwork {
+            padding: 0 !important;
+            margin: 0;
+        }
+        .myForm .flatbutton {
+            align-self: flex-start;
+            width: 25%;
         }
     }
