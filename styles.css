@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background-color: #1c1a19;
+  background-color: #262626;
   margin: 0;
 }
 
@@ -18,6 +18,11 @@ header {
   justify-content: space-between;
   font-size: 18px;
   color: white;
+}
+
+input[type="button"],
+button {
+  transition: all 0.3s ease-in;
 }
 
 .grid-container {
@@ -49,9 +54,31 @@ ul {
   background-position-y: bottom;
   color: white;
   box-sizing: border-box;
+  height: 100vh;
+  animation: slide-background 1s ease-out 1;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Crete Round", sans-serif;
+  font-weight: normal;
+}
+
+.firstcard h2,
+.firstcard p {
+  color: #091e42;
 }
 
 .social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  height: 40px;
+  padding: 0;
+}
+
+.socialmedia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,12 +93,6 @@ h5 {
   color: #ff6b00;
   font-weight: normal;
   margin-bottom: 25px;
-}
-
-h2 {
-  font-size: 24px;
-  font-family: "Crete Round", sans-serif;
-  font-weight: normal;
 }
 
 .descrip {
@@ -125,7 +146,7 @@ h3 {
   background-color: white;
   color: #091e42;
   margin-right: 10px;
-  border: 1px solid #091e42;
+  border: 1px solid #8993a4;
   font-family: "Inter", sans-serif;
 }
 
@@ -178,6 +199,10 @@ h3 {
   font-size: 17px;
   font-weight: bold;
   width: 50%;
+}
+
+.abouty .flatbutton {
+  width: 165px;
 }
 
 .thiccbutton {
@@ -394,6 +419,361 @@ input {
   justify-content: center;
 }
 
+.myForm .flatbutton {
+  width: 165px;
+}
+
 .social_media li {
   padding-right: 3vh;
+}
+
+.m-hidden {
+  display: none;
+}
+
+.m-hidden li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vh;
+}
+
+.bio section {
+  animation: slide-right 1s ease-out 1;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-background {
+  from {
+    background-position-x: 200%;
+  }
+
+  to {
+    background-position-x: right;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .d-hidden {
+    display: none !important;
+  }
+
+  .m-hidden {
+    display: flex;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .toolbar .doe {
+    margin: 0;
+    padding-right: 25vw;
+  }
+
+  .toolbar li {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio {
+    background-image: url(imgs/Illustration-header.svg);
+    box-sizing: border-box;
+    background-size: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 20vh 3vh;
+    height: 100vh;
+    position: relative;
+  }
+
+  .descrip {
+    width: 40%;
+  }
+
+  .media {
+    width: auto;
+    padding-top: 10%;
+  }
+
+  .socialmedia {
+    padding: 0 10vw;
+  }
+
+  .media .social_media {
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .bio section {
+    margin-left: 5vw;
+  }
+
+  .social_media li {
+    margin-bottom: 20px;
+  }
+
+  section h5 {
+    font-size: 6vw;
+    margin-top: 50px;
+  }
+
+  section h2 {
+    font-size: 2.8vw;
+  }
+
+  section .descrip {
+    font-size: 1.7vw;
+    font-family: "Crete Round", sans-serif;
+  }
+
+  .myworks {
+    padding: 0 15vh;
+    display: block;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-bottom: 3vw;
+    padding-top: 5vw;
+  }
+
+  .myworks h3 {
+    border: none;
+    margin-right: 35px;
+    color: #091e42;
+    font-size: 3vw;
+  }
+
+  .myworks .line {
+    flex-grow: 1;
+    width: auto;
+    border-bottom: 1px solid #091e42;
+  }
+
+  .firstcard {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .desktopcard1 {
+    flex-direction: column;
+    width: 40%;
+    padding-left: 2vw;
+    box-sizing: border-box;
+  }
+
+  .desktopcard1 h2 {
+    font-size: 3vw;
+    color: #091e42;
+    margin-top: auto;
+  }
+
+  .desktopcard1 p {
+    font-size: 1.5vw;
+    color: #091e42;
+  }
+
+  .placeholder {
+    width: 60%;
+    margin: 0;
+  }
+
+  .flatbutton {
+    width: 25%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+    box-sizing: border-box;
+    gap: 24px;
+    padding: 2vh 15vh 10vh 15vh;
+  }
+
+  .grido {
+    align-self: center;
+    position: relative;
+  }
+
+  .opaquebuttons {
+    padding: 10px 12px !important;
+    font-size: 1.3vw;
+  }
+
+  .desktopcard2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .desktopcard2 img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .abouty {
+    padding: 0 10vh;
+  }
+
+  .about {
+    background-image: url(imgs/aboutbackground.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 40%;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .about h1 {
+    font-size: 6vw;
+    color: #f55800;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  .about p {
+    width: 50%;
+    font-weight: normal;
+  }
+
+  .about .flatbutton {
+    width: 165px !important;
+  }
+
+  .toolscontainer {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10vh;
+    padding: 10vh 0;
+  }
+
+  .toolscontainer li {
+    text-align: left;
+  }
+
+  .myForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .deskform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myForm p {
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    font-size: 3vw;
+  }
+
+  .pad {
+    padding: 5vw;
+  }
+
+  .myForm .flatbutton {
+    align-self: flex-start;
+    width: 165px;
+  }
+
+  .cardinfo {
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+  }
+
+  .thiccbutton {
+    z-index: 2;
+  }
+
+  .desktopcard1 .flatbutton {
+    padding: 10px 15px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .cardinfo .thiccbutton {
+    width: 100%;
+  }
+
+  .buttonwork {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .cardinfo h4 {
+    font-size: 2.3vw;
+    padding: 15px;
+    opacity: 80%;
+  }
+
+  .toolstitle h5 {
+    font-size: 2.8vw;
+  }
+
+  .aboutlist {
+    font-size: 1.8vw;
+  }
+
+  .cardinfo p {
+    font-size: 1.3vw;
+    color: white;
+    padding-left: 15px;
+    font-weight: normal;
+    opacity: 80%;
+  }
+
+  .myForm button:hover {
+    width: auto;
+  }
+
+  .myForm input,
+  textarea {
+    transition: all 0.3s linear;
+  }
+
+  .myForm input:hover,
+  textarea:hover {
+    transform: translateX(20px);
+  }
+
+  .whitebuttons {
+    font-size: 1.3vw;
+  }
 }
