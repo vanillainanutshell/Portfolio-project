@@ -6,7 +6,7 @@
 Second part of the Portfolio project
 
 
-![image](https://user-images.githubusercontent.com/88060989/143655339-442e20f6-6c21-4464-98a3-5817ffefa81e.png)
+![image](https://user-images.githubusercontent.com/88060989/144926829-b723e912-7e48-43c6-b0d7-5b343578ae26.png)
 
 
 
@@ -15,7 +15,9 @@ Second part of the Portfolio project
 - HTML5
 - CSS
 
+## Link
 
+https://vanillainanutshell.github.io/Portfolio-project/
 
 ### Setup
 
