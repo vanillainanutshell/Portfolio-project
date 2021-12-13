@@ -26,9 +26,10 @@
 </head>
 
 <body>
+
     <header class="toolbar">
         <p class="doe">John Doe</p>
-        <img alt="burgir" src="imgs/hamburg.svg" class="burgir d-hidden">
+        <img id="burgir" alt="burgir" src="imgs/hamburg.svg" class="burgir d-hidden">
         <ul class="m-hidden socialmedia">
             <li><a href="#myworks">Portifolio</a></li>
             <li><a href="#about">About</a></li>
@@ -36,6 +37,22 @@
             <li><img alt="" src="imgs/dmail.svg"></li>
         </ul>
     </header>
+    <div id="mobileModal" class="modal">
+        <ul class="contentModal">
+            <li class="close">
+                <span>&times;</span>
+            </li>
+            <li>
+                <a id="close" href="#myworks">Portfolio</a>
+            </li>
+            <li>
+                <a id="close2" href="#about">About</a>
+            </li>
+            <li>
+                <a id="close3" href="#myForm">Contact</a>
+            </li>
+        </ul>
+    </div>
     <div class="bio">
         <section>
             <h5>Hey There.<br> I'm Matt</h5>
@@ -281,6 +298,7 @@
             </li>
         </ul>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

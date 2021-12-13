@@ -1,14 +1,11 @@
 
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio-project
+
 Second part of the Portfolio project
 
-
 ![image](https://user-images.githubusercontent.com/88060989/144926829-b723e912-7e48-43c6-b0d7-5b343578ae26.png)
-
-
 
 ## Built With
 
@@ -36,10 +33,15 @@ https://vanillainanutshell.github.io/Portfolio-project/
 - Twitter: [@johnftitor](https://twitter.com/johnftitor)
 - LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
 
+👤 **Author3**
+
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
