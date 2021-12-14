@@ -11,6 +11,7 @@ Second part of the Portfolio project
 
 - HTML5
 - CSS
+- JavaScript
 
 ## Link
 
