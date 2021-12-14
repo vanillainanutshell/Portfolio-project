@@ -15,7 +15,7 @@ Second part of the Portfolio project
 
 ## Link
 
-https://vanillainanutshell.github.io/Portfolio-project/
+- https://vanillainanutshell.github.io/Portfolio-project/
 
 ### Setup
 
