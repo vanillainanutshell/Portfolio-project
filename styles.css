@@ -63,16 +63,89 @@ button {
     font-weight: 700;
 }
 
+
+/* popup */
+
 .popup {
     display: none;
     position: fixed;
-    top: 0;
+    top: 5vw;
+    margin: 5% 2.5%;
     z-index: 2;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    width: 95%;
+    height: 90%;
     background-color: white;
 }
+
+.popup h2 {
+    font-family: "Roboto", sans-serif;
+    color: #172b4d;
+    font-weight: bold;
+    padding: 5vw;
+    margin: 10px 0 30px 0;
+}
+
+.popup .close {
+    font-size: 10vw;
+    color: #67798e;
+    font-weight: 100;
+}
+
+.popup p {
+    color: #344563;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 2vw 5vw;
+    margin: 0;
+    font-size: 3.5vw;
+}
+
+.popup .links {
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.links .flatbutton {
+    display: flex;
+    width: fit-content;
+    padding: 15px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.flatbutton a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.flatbutton img {
+    margin-left: 15px;
+}
+
+.popimg {
+    width: 85vw;
+    height: auto;
+    padding: 5vw;
+    justify-content: center;
+}
+
+.popup .technologies {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+
+.technologies li {
+    font-weight: bold;
+}
+
+
+/* popup end */
 
 .close {
     color: #6f6c6b;
