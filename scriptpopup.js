@@ -12,9 +12,9 @@ const body = document.getElementById('body');
 popup.className = 'containertransp';
 popup.id = 'popup';
 popup.innerHTML = `
-    <div class = 'popup'>
+    <div class ='popup'>
     <h2 class="popuptitle">${info.title[1]}</h2>
-    <span class= "close">&times;</span>
+    <span id="closer" class= "close">&times;</span>
     <ul class="technologies">
     <li class="whitebuttons">${info.technologies[0]}</li>
     <li class="whitebuttons">${info.technologies[1]}</li>
@@ -63,6 +63,12 @@ const popupbutton8 = document.getElementById('popupbtn8');
 popupbutton8.addEventListener('click', function() {
     popup.style.display = 'block';
 });
+
+const span2 = document.getElementById('closer');
+span2.addEventListener('click', function() {
+    popup.style.display = 'none';
+});
+
 window.onclick = function(event) {
     if (event.target === popup) {
         popup.style.display = 'none';
