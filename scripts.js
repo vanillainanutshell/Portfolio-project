@@ -1,3 +1,4 @@
+
 const info = {
   title: 'Multi Post Stories',
   text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -128,38 +129,5 @@ window.onclick = function (event) {
 window.onclick = function (event) {
   if (event.target === popupD) {
     popupD.style.display = 'none';
-  }
-};
-
-const modal = document.getElementById('mobileModal');
-const btn = document.getElementById('burgir');
-const span = document.getElementsByClassName('close')[0];
-const close1 = document.getElementById('close');
-const close2 = document.getElementById('close2');
-const close3 = document.getElementById('close3');
-
-btn.onclick = function () {
-  modal.style.display = 'block';
-};
-
-span.onclick = function () {
-  modal.style.display = 'none';
-};
-
-close1.onclick = function () {
-  modal.style.display = 'none';
-};
-
-close2.onclick = function () {
-  modal.style.display = 'none';
-};
-
-close3.onclick = function () {
-  modal.style.display = 'none';
-};
-
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
   }
 };
