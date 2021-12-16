@@ -63,6 +63,45 @@ button {
   font-weight: 700;
 }
 
+/* popup */
+
+.containertransp {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  top: 0;
+  position: fixed;
+}
+
+.popup {
+  overflow: hidden;
+  opacity: 1;
+  position: fixed;
+  top: 5vw;
+  margin: 5% 2.5%;
+  z-index: 10;
+  width: 95%;
+  height: 90%;
+  background-color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Crete Round", sans-serif;
+  font-weight: normal;
+}
+
+.popup h2 {
+  font-family: "Roboto", sans-serif;
+  color: #172b4d;
+  font-weight: bold;
+  padding: 5vw;
+  margin: 2vw 0 5vw 0;
+  font-size: 7vw;
+}
+
 .close {
   color: #6f6c6b;
   font-size: 25px;
@@ -73,6 +112,133 @@ button {
   right: 30px;
   position: absolute;
 }
+
+.popup .close {
+  font-size: 10vw;
+  color: #67798e;
+  font-weight: 100;
+  top: 5vw;
+}
+
+.popup p {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding: 2vw 5vw;
+  margin: 0;
+  font-size: 3.5vw;
+}
+
+.popup .links {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.flatbutton {
+  padding: 12px 15px;
+  color: white;
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  border-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.flatbutton:hover {
+  padding: 12px 15px;
+  color: #ff6b00;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #ff6b00;
+  font-size: 17px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.flatbutton:active {
+  padding: 12px 15px;
+  color: #f4f1f0;
+  background-color: #e05304;
+  font-family: "Inter", sans-serif;
+  border-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.flatbutton:disabled {
+  padding: 12px 15px;
+  color: #5b5957;
+  background-color: #f4f1f0;
+  font-family: "Inter", sans-serif;
+  border-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.links .flatbutton {
+  display: flex;
+  padding: 2vw;
+  justify-content: center;
+  font-size: 4vw;
+  font-weight: normal;
+  width: 32vw;
+  height: 6vw;
+  margin-top: 5vw;
+  background-color: #f55800;
+}
+
+.abouty .flatbutton {
+  width: 165px;
+}
+
+.myForm .flatbutton {
+  width: 165px;
+}
+
+.links .flatbutton:hover {
+  width: 32vw;
+  height: 6vw;
+}
+
+.flatbutton a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.flatbutton img {
+  margin-left: 15px;
+  width: 4vw;
+}
+
+.popimg {
+  width: 85vw;
+  height: auto;
+  padding: 5vw;
+  justify-content: center;
+}
+
+.popup .technologies {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 5vw;
+}
+
+.technologies li {
+  font-weight: bold;
+  padding: 2vw;
+  font-size: 3vw;
+}
+
+/* popup end */
 
 .close:hover {
   cursor: pointer;
@@ -103,12 +269,6 @@ ul {
   box-sizing: border-box;
   height: 100vh;
   animation: slide-background 1s ease-out 1;
-}
-
-h2 {
-  font-size: 40px;
-  font-family: "Crete Round", sans-serif;
-  font-weight: normal;
 }
 
 .firstcard h2,
@@ -202,54 +362,6 @@ h3 {
   flex-direction: row;
   justify-content: left;
   padding: 0;
-}
-
-.flatbutton {
-  padding: 12px 15px;
-  color: white;
-  background-color: #ff6b00;
-  font-family: "Inter", sans-serif;
-  border-style: none;
-  font-size: 17px;
-  font-weight: bold;
-  width: 50%;
-}
-
-.flatbutton:hover {
-  padding: 12px 15px;
-  color: #ff6b00;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  border: 1px solid #ff6b00;
-  font-size: 17px;
-  font-weight: bold;
-  width: 50%;
-}
-
-.flatbutton:active {
-  padding: 12px 15px;
-  color: #f4f1f0;
-  background-color: #e05304;
-  font-family: "Inter", sans-serif;
-  border-style: none;
-  font-size: 17px;
-  font-weight: bold;
-  width: 50%;
-}
-
-.flatbutton:disabled {
-  padding: 12px 15px;
-  color: #5b5957;
-  background-color: #f4f1f0;
-  font-family: "Inter", sans-serif;
-  border-style: none;
-  font-size: 17px;
-  font-weight: bold;
-  width: 50%;
-}
-
-.abouty .flatbutton {
-  width: 165px;
 }
 
 .thiccbutton {
@@ -466,10 +578,6 @@ input {
   justify-content: center;
 }
 
-.myForm .flatbutton {
-  width: 165px;
-}
-
 .social_media li {
   padding-right: 3vh;
 }
@@ -508,7 +616,7 @@ input {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .d-hidden {
     display: none !important;
   }
@@ -659,7 +767,7 @@ input {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(300px, auto);
     box-sizing: border-box;
     gap: 24px;
     padding: 2vh 15vh 10vh 15vh;
@@ -827,4 +935,124 @@ input {
   .whitebuttons {
     font-size: 1.3vw;
   }
+
+  /* popup */
+  .containertransp {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    top: 0;
+    position: fixed;
+  }
+
+  .popup {
+    overflow: hidden;
+    opacity: 1;
+    position: fixed;
+    top: 1vw;
+    margin: 5% 2.5%;
+    z-index: 10;
+    width: 95%;
+    height: 85%;
+    background-color: white;
+  }
+
+  .flextonator {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flextonatorreturns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup h2 {
+    font-family: "Roboto", sans-serif;
+    color: #172b4d;
+    font-weight: bold;
+    padding: 0;
+    margin: 2vw 2vw 2vw 2vw;
+    font-size: 3vw;
+  }
+
+  .popup .close {
+    font-size: 3vw;
+    color: #67798e;
+    font-weight: 100;
+    top: 0;
+  }
+
+  .popup p {
+    color: #344563;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 2vw;
+    margin: 0;
+    font-size: 1.5vw;
+    line-height: 4vh;
+  }
+
+  .popup .links {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vw 0 0 2vw;
+  }
+
+  .links .flatbutton {
+    display: flex;
+    padding: 1vw;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: normal;
+    width: 10vw;
+    height: 1vw;
+    margin-top: 10vh;
+    margin-right: 0.5vw;
+    background-color: #f55800;
+  }
+
+  .links .flatbutton:hover {
+    width: 10vw;
+    height: 1vw;
+    color: #262626;
+  }
+
+  .flatbutton a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    width: fit-content;
+  }
+
+  .flatbutton img {
+    margin-left: 10px;
+    width: 1.2vw;
+  }
+
+  .popimg {
+    width: 50vw;
+    height: 60vh;
+    padding: 2vw 0 2vw 2vw;
+    justify-content: center;
+  }
+
+  .popup .technologies {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 2vw;
+  }
+
+  .technologies li {
+    font-weight: bold;
+    padding: 0.5vw;
+    font-size: 1vw;
+  }
+
+  /* popup end */
 }
