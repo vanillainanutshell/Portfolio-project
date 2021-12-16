@@ -88,6 +88,12 @@ button {
     background-color: white;
 }
 
+h2 {
+    font-size: 40px;
+    font-family: "Crete Round", sans-serif;
+    font-weight: normal;
+}
+
 .popup h2 {
     font-family: "Roboto", sans-serif;
     color: #172b4d;
@@ -95,6 +101,17 @@ button {
     padding: 5vw;
     margin: 2vw 0 5vw 0;
     font-size: 7vw;
+}
+
+.close {
+    color: #6f6c6b;
+    font-size: 25px;
+    text-decoration: none;
+    border: none !important;
+    margin: 0 !important;
+    top: 20px;
+    right: 30px;
+    position: absolute;
 }
 
 .popup .close {
@@ -119,6 +136,50 @@ button {
     margin: 0;
 }
 
+.flatbutton {
+    padding: 12px 15px;
+    color: white;
+    background-color: #ff6b00;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.flatbutton:hover {
+    padding: 12px 15px;
+    color: #ff6b00;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #ff6b00;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.flatbutton:active {
+    padding: 12px 15px;
+    color: #f4f1f0;
+    background-color: #e05304;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.flatbutton:disabled {
+    padding: 12px 15px;
+    color: #5b5957;
+    background-color: #f4f1f0;
+    font-family: "Inter", sans-serif;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
 .links .flatbutton {
     display: flex;
     padding: 2vw;
@@ -128,7 +189,15 @@ button {
     width: 32vw;
     height: 6vw;
     margin-top: 5vw;
-    background-color: #F55800;
+    background-color: #f55800;
+}
+
+.abouty .flatbutton {
+    width: 165px;
+}
+
+.myForm .flatbutton {
+    width: 165px;
 }
 
 .links .flatbutton:hover {
@@ -173,17 +242,6 @@ button {
 
 /* popup end */
 
-.close {
-    color: #6f6c6b;
-    font-size: 25px;
-    text-decoration: none;
-    border: none !important;
-    margin: 0 !important;
-    top: 20px;
-    right: 30px;
-    position: absolute;
-}
-
 .close:hover {
     cursor: pointer;
 }
@@ -213,12 +271,6 @@ ul {
     box-sizing: border-box;
     height: 100vh;
     animation: slide-background 1s ease-out 1;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: "Crete Round", sans-serif;
-    font-weight: normal;
 }
 
 .firstcard h2,
@@ -312,54 +364,6 @@ h3 {
     flex-direction: row;
     justify-content: left;
     padding: 0;
-}
-
-.flatbutton {
-    padding: 12px 15px;
-    color: white;
-    background-color: #ff6b00;
-    font-family: "Inter", sans-serif;
-    border-style: none;
-    font-size: 17px;
-    font-weight: bold;
-    width: 50%;
-}
-
-.flatbutton:hover {
-    padding: 12px 15px;
-    color: #ff6b00;
-    background-color: white;
-    font-family: "Inter", sans-serif;
-    border: 1px solid #ff6b00;
-    font-size: 17px;
-    font-weight: bold;
-    width: 50%;
-}
-
-.flatbutton:active {
-    padding: 12px 15px;
-    color: #f4f1f0;
-    background-color: #e05304;
-    font-family: "Inter", sans-serif;
-    border-style: none;
-    font-size: 17px;
-    font-weight: bold;
-    width: 50%;
-}
-
-.flatbutton:disabled {
-    padding: 12px 15px;
-    color: #5b5957;
-    background-color: #f4f1f0;
-    font-family: "Inter", sans-serif;
-    border-style: none;
-    font-size: 17px;
-    font-weight: bold;
-    width: 50%;
-}
-
-.abouty .flatbutton {
-    width: 165px;
 }
 
 .thiccbutton {
@@ -576,10 +580,6 @@ input {
     justify-content: center;
 }
 
-.myForm .flatbutton {
-    width: 165px;
-}
-
 .social_media li {
     padding-right: 3vh;
 }
@@ -616,7 +616,7 @@ input {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .d-hidden {
         display: none !important;
     }
@@ -947,7 +947,7 @@ input {
         height: 1vw;
         margin-top: 10vh;
         margin-right: 0.5vw;
-        background-color: #F55800;
+        background-color: #f55800;
     }
     .links .flatbutton:hover {
         width: 10vw;
@@ -969,7 +969,7 @@ input {
     .popimg {
         width: 50vw;
         height: 60vh;
-        padding: 2vw 0vw 2vw 2vw;
+        padding: 2vw 0 2vw 2vw;
         justify-content: center;
     }
     .popup .technologies {
