@@ -5,27 +5,27 @@ const close1 = document.getElementById('close');
 const close2 = document.getElementById('close2');
 const close3 = document.getElementById('close3');
 
-btn.onclick = function() {
+btn.onclick = function openButt() {
     modal.style.display = 'block';
 };
 
-span.onclick = function() {
+span.onclick = function spanClose() {
     modal.style.display = 'none';
 };
 
-close1.onclick = function() {
+close1.onclick = function button1Close() {
     modal.style.display = 'none';
 };
 
-close2.onclick = function() {
+close2.onclick = function button2Close() {
     modal.style.display = 'none';
 };
 
-close3.onclick = function() {
+close3.onclick = function button3Close() {
     modal.style.display = 'none';
 };
 
-window.onclick = function(event) {
+window.onclick = function outerClose(event) {
     if (event.target === modal) {
         modal.style.display = 'none';
     }
@@ -46,16 +46,20 @@ function checkEmailUppercase() {
                 const errorContainer = document.getElementById('errorMessage');
                 errorContainer.style.display = 'block';
                 upperCaseErrorMessage();
-
-                errorContainer.onclick = function() {
-                    $("#errorMessage").fadeOut(5000);
-                }
                 return false;
             }
         }
     }
     return true;
 }
-document.getElementById('myForm').onsubmit = function() {
+
+const errorContainer = document.getElementById('errorMessage'); 
+const submit = document.getElementById('submit'); 
+
+submit.addEventListener('click', () => {
+    errorContainer.fadeOut(3000); 
+}); 
+
+document.getElementById('myForm').onsubmit = function checkMailUpper() {
     return checkEmailUppercase();
 };
