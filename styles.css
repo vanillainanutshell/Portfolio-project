@@ -70,21 +70,23 @@ button {
 .errorMessageContainer {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .errorMessageContainer .errorMessage {
   background-color: rgba(251, 248, 247, 1);
   border: 2px solid rgba(219, 216, 215, 1);
   border-radius: 3px;
-  margin-left: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 5%;
   font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #262626;
+  color: red;
+  margin-top: 20px;
+  z-index: 2;
 }
+
 
 /* popup */
 
@@ -260,6 +262,7 @@ h2 {
   padding: 2vw;
   font-size: 3vw;
 }
+
 
 /* popup end */
 
