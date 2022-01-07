@@ -63,6 +63,30 @@ button {
   font-weight: 700;
 }
 
+.hidden {
+  display: none;
+}
+
+.errorMessageContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.errorMessageContainer .errorMessage {
+  background-color: rgba(251, 248, 247, 1);
+  border: 2px solid rgba(219, 216, 215, 1);
+  border-radius: 3px;
+  padding: 5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: red;
+  margin-top: 20px;
+  z-index: 2;
+}
+
 /* popup */
 
 .containertransp {
@@ -196,7 +220,7 @@ h2 {
 }
 
 .myForm .flatbutton {
-  width: 165px;
+  width: 25vw;
 }
 
 .links .flatbutton:hover {
@@ -868,7 +892,36 @@ input {
 
   .myForm .flatbutton {
     align-self: flex-start;
-    width: 165px;
+    width: 25vw;
+  }
+
+  .links .flatbutton {
+    display: flex;
+    padding: 1vw;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: normal;
+    width: 10vw;
+    height: 1vw;
+    margin-top: 10vh;
+    margin-right: 0.5vw;
+    background-color: #f55800;
+  }
+
+  .desktopcard1 .flatbutton {
+    padding: 10px 15px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .myForm .flatbutton:hover {
+    align-self: flex-start;
+    width: 25vw;
+  }
+
+  .myForm .flatbutton:focus {
+    align-self: flex-start;
+    width: 25vw;
   }
 
   .cardinfo {
@@ -879,12 +932,6 @@ input {
 
   .thiccbutton {
     z-index: 2;
-  }
-
-  .desktopcard1 .flatbutton {
-    padding: 10px 15px;
-    width: auto;
-    box-sizing: border-box;
   }
 
   .cardinfo .thiccbutton {
@@ -999,19 +1046,6 @@ input {
     display: flex;
     justify-content: flex-start;
     margin: 1vw 0 0 2vw;
-  }
-
-  .links .flatbutton {
-    display: flex;
-    padding: 1vw;
-    justify-content: center;
-    font-size: 1.2vw;
-    font-weight: normal;
-    width: 10vw;
-    height: 1vw;
-    margin-top: 10vh;
-    margin-right: 0.5vw;
-    background-color: #f55800;
   }
 
   .links .flatbutton:hover {

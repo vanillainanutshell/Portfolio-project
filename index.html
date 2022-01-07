@@ -22,6 +22,7 @@
 
         gtag('config', 'G-ZEQP5RBC3E');
     </script>
+
     <title>Mauro's Portifolio</title>
 </head>
 
@@ -276,13 +277,16 @@
             <li class="aboutlist">Terminal</li>
         </ul>
     </section>
-    <section id="myForm" class="myForm pad">
+    <section class="myForm pad">
         <p> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch. </p>
-        <form class="myForm deskform" action="https://formspree.io/f/xwkyeara" method="post">
+        <form class="myForm deskform" id="myForm" onsubmit="return checkEmailUppercase();" action="https://formspree.io/f/xwkyeara" method="post">
             <input name="username" type="text" id="name" placeholder="Full name" maxlength="30" required>
             <input name="useremail" type="email" id="email" placeholder="Email address" required>
             <textarea name="usermessage" maxlength="500" placeholder="Enter text here" required></textarea>
-            <button type="submit" class="flatbutton">Get in touch</button>
+            <div id="errorMessageContainer" class="errorMessageContainer">
+                <button type="submit" id="submit" class="flatbutton">Get in touch</button>
+                <p id="errorMessage" class="hidden errorMessage"></p>
+            </div>
         </form>
     </section>
     <footer class="myFooter">
